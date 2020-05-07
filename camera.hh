@@ -41,5 +41,7 @@ public:
     private:
     int mHeight;
     int mWidth;
+    const char *mDevicename;
+    struct timeval last_time = {0 ,0}; 
 };
 #endif

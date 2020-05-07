@@ -87,8 +87,20 @@ int main(int argc, char **argv)
 
     //这个是输出缓冲区的大小，要设置到比任意一帧h264 大
     OutPacketBuffer::maxSize = 2000000;
-    char const *streamName = "h264Live";
+    char const *streamName = "h264Live0";
     char const *devicename = "/dev/video0";
+    ServerMediaSession *sms = ServerMediaSession::createNew(*env, streamName, streamName,
+                                                            descriptionString);
+    sms->addSubsession(H264LiveVideoServerMediaSubssion ::createNew(*env, reuseFirstSource, devicename, 640, 480));
+    rtspServer->addServerMediaSession(sms);
+
+    announceStream(rtspServer, sms, streamName, devicename);
+  }
+
+  { 
+    OutPacketBuffer::maxSize = 2000000;
+    char const *streamName = "h264Live1";
+    char const *devicename = "/dev/video1";
     ServerMediaSession *sms = ServerMediaSession::createNew(*env, streamName, streamName,
                                                             descriptionString);
     sms->addSubsession(H264LiveVideoServerMediaSubssion ::createNew(*env, reuseFirstSource, devicename, 640, 480));
