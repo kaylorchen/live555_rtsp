@@ -40,10 +40,13 @@ include_directories(
     ./
 )
 set(CMAKE_BUILD_TYPE Release)
-
-add_executable(OnDemandRTSPServer OnDemandRTSPServer.cpp H264FramedLiveSource.cpp camera.cpp)
+add_library(H264FramedLiveSource H264FramedLiveSource.cpp camera.cpp)
 set(LIVE_LIBRARIES liveMedia groupsock  BasicUsageEnvironment UsageEnvironment)
-target_link_libraries(OnDemandRTSPServer ${LIVE_LIBRARIES} -lssl -lcrypto -lx264)
+target_link_libraries(H264FramedLiveSource ${LIVE_LIBRARIES} -lssl -lcrypto -lx264)
+
+add_executable(OnDemandRTSPServer OnDemandRTSPServer.cpp )
+target_link_libraries(OnDemandRTSPServer H264FramedLiveSource config)
+
 
 
 

@@ -18,9 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // - various kinds of file on demand, using a built-in RTSP server.
 // main program
 
+#include "H264FramedLiveSource.hh"
 #include <liveMedia.hh>
 #include <BasicUsageEnvironment.hh>
-#include "H264FramedLiveSource.hh"
+#include <libconfig.h>
 
 UsageEnvironment *env;
 
@@ -55,6 +56,25 @@ static void onOggDemuxCreation(OggFileServerDemux *newDemux, void * /*clientData
 
 int main(int argc, char **argv)
 {
+  if (argc != 2)
+  {
+    printf("Please type: ./OnDemandRTSPServer example.cfg\n");
+    return 1;
+  }
+  config_t cfg;
+  config_setting_t *setting;
+  const char *str;
+  config_init(&cfg);
+  /* Read the file. If there is an error, report it and exit. */
+  //   if(! config_read_file(&cfg, "../example.cfg"))
+  if (!config_read_file(&cfg, argv[1]))
+  {
+    fprintf(stderr, "read config file error: %s:%d - %s\n", config_error_file(&cfg),
+            config_error_line(&cfg), config_error_text(&cfg));
+    config_destroy(&cfg);
+    return (EXIT_FAILURE);
+  }
+
   // Begin by setting up our usage environment:
   TaskScheduler *scheduler = BasicTaskScheduler::createNew();
   env = BasicUsageEnvironment::createNew(*scheduler);
@@ -82,32 +102,25 @@ int main(int argc, char **argv)
   // RTSP server.  Each such stream is implemented using a
   // "ServerMediaSession" object, plus one or more
   // "ServerMediaSubsession" objects for each audio/video substream.
-
-  { //这里是自己的ServerMediaSubssion
-
-    //这个是输出缓冲区的大小，要设置到比任意一帧h264 大
+  setting = config_lookup(&cfg, "ptz");
+  if (setting != NULL)
+  {
     OutPacketBuffer::maxSize = 2000000;
-    char const *streamName = "h264Live0";
-    char const *devicename = "/dev/video0";
+    char const *streamName;
+    char const *devicename;
+    int width, height;
+    config_setting_lookup_string(setting, "devicename", &devicename);
+    config_setting_lookup_string(setting, "streamName", &streamName);
+    config_setting_lookup_int(setting, "width", &width);
+    config_setting_lookup_int(setting, "height", &height);
+    printf("%s %d %d\n", devicename, width, height);
     ServerMediaSession *sms = ServerMediaSession::createNew(*env, streamName, streamName,
                                                             descriptionString);
-    sms->addSubsession(H264LiveVideoServerMediaSubssion ::createNew(*env, reuseFirstSource, devicename, 640, 480));
+    sms->addSubsession(H264LiveVideoServerMediaSubssion ::createNew(*env, reuseFirstSource, devicename, width, height));
     rtspServer->addServerMediaSession(sms);
-
     announceStream(rtspServer, sms, streamName, devicename);
   }
 
-  { 
-    OutPacketBuffer::maxSize = 2000000;
-    char const *streamName = "h264Live1";
-    char const *devicename = "/dev/video1";
-    ServerMediaSession *sms = ServerMediaSession::createNew(*env, streamName, streamName,
-                                                            descriptionString);
-    sms->addSubsession(H264LiveVideoServerMediaSubssion ::createNew(*env, reuseFirstSource, devicename, 640, 480));
-    rtspServer->addServerMediaSession(sms);
-
-    announceStream(rtspServer, sms, streamName, devicename);
-  }
   // Also, attempt to create a HTTP server for RTSP-over-HTTP tunneling.
   // Try first with the default HTTP port (80), and then with the alternative HTTP
   // port numbers (8000 and 8080).

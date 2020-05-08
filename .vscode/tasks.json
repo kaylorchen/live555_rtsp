@@ -13,6 +13,15 @@
             }
         },
         {
+            "label": "rebuild",
+            "type": "shell",
+            "command": "sh build.sh",
+            // "command": "make -j -C ./build",
+            "group": {
+                "kind": "build",
+            }
+        },
+        {
             "label": "clean",
             "type": "shell",
             "command": "make clean -C ./build",
