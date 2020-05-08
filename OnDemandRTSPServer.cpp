@@ -102,7 +102,7 @@ int main(int argc, char **argv)
   // RTSP server.  Each such stream is implemented using a
   // "ServerMediaSession" object, plus one or more
   // "ServerMediaSubsession" objects for each audio/video substream.
-  setting = config_lookup(&cfg, "ptz");
+  setting = config_lookup(&cfg, "first");
   if (setting != NULL)
   {
     OutPacketBuffer::maxSize = 2000000;
@@ -120,6 +120,26 @@ int main(int argc, char **argv)
     rtspServer->addServerMediaSession(sms);
     announceStream(rtspServer, sms, streamName, devicename);
   }
+
+  setting = config_lookup(&cfg, "second");
+  if (setting != NULL)
+  {
+    OutPacketBuffer::maxSize = 2000000;
+    char const *streamName;
+    char const *devicename;
+    int width, height;
+    config_setting_lookup_string(setting, "devicename", &devicename);
+    config_setting_lookup_string(setting, "streamName", &streamName);
+    config_setting_lookup_int(setting, "width", &width);
+    config_setting_lookup_int(setting, "height", &height);
+    printf("%s %d %d\n", devicename, width, height);
+    ServerMediaSession *sms = ServerMediaSession::createNew(*env, streamName, streamName,
+                                                            descriptionString);
+    sms->addSubsession(H264LiveVideoServerMediaSubssion ::createNew(*env, reuseFirstSource, devicename, width, height));
+    rtspServer->addServerMediaSession(sms);
+    announceStream(rtspServer, sms, streamName, devicename);
+  }
+
 
   // Also, attempt to create a HTTP server for RTSP-over-HTTP tunneling.
   // Try first with the default HTTP port (80), and then with the alternative HTTP
