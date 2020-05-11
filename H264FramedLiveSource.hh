@@ -5,16 +5,28 @@
 
 #include "OnDemandServerMediaSubsession.hh"
 #include "camera.hh"
-
-
+/// 这是一个H264LiveVideoServerMediaSubssion类
 class H264LiveVideoServerMediaSubssion : public OnDemandServerMediaSubsession
 {
 
 public:
-    static H264LiveVideoServerMediaSubssion *createNew(UsageEnvironment &env, Boolean reuseFirstSource, char const *devicename , int width, int height);
+    /// 创建一个新的 H264LiveVideoServerMediaSubssion
+    /// @param env 环境变量的引用
+    /// @param reuseFirstSource
+    /// @param devicename 摄像头设备名
+    /// @param width 图像分辨率的宽度
+    /// @param height 图像分辨率的高度
+    static H264LiveVideoServerMediaSubssion *createNew(UsageEnvironment &env, Boolean reuseFirstSource, char const *devicename, int width, int height);
 
 protected:
-    H264LiveVideoServerMediaSubssion(UsageEnvironment &env, Boolean reuseFirstSource, char const *devicename , int width, int height);
+    /// H264LiveVideoServerMediaSubssion的构造函数
+    /// @param env 环境变量的引用
+    /// @param reuseFirstSource
+    /// @param devicename 摄像头设备名
+    /// @param width 图像分辨率的宽度
+    /// @param height 图像分辨率的高度
+    H264LiveVideoServerMediaSubssion(UsageEnvironment &env, Boolean reuseFirstSource, char const *devicename, int width, int height);
+    /// H264LiveVideoServerMediaSubssion的析构函数
     ~H264LiveVideoServerMediaSubssion();
 
 protected: // redefined virtual functions
@@ -45,6 +57,5 @@ private:
     virtual void doGetNextFrame();
 
 protected:
-    // static TestFromFile *pTest;
 };
 #endif

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>live555_rtsp: encoder_define.hh 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">live555_rtsp
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">USB摄像头RTSP推流</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('encoder__define_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">encoder_define.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="encoder__define_8hh.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _ENCODER_DEFINE_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _ENCODER_DEFINE_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//#include &lt;unistd.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;x264.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_encoder.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_encoder.html#a6844eefdfc8109863dff5db77988de75">   12</a></span>&#160;    x264_param_t *<a class="code" href="struct_encoder.html#a6844eefdfc8109863dff5db77988de75">param</a>; </div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_encoder.html#af5a2b0d4bbbfecf57a4cd357cb8a9e8b">   13</a></span>&#160;    x264_t *<a class="code" href="struct_encoder.html#af5a2b0d4bbbfecf57a4cd357cb8a9e8b">handle</a>; </div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_encoder.html#a6b79affabf2ca3b4c3b71d79f9e61236">   14</a></span>&#160;    x264_picture_t *<a class="code" href="struct_encoder.html#a6b79affabf2ca3b4c3b71d79f9e61236">picture</a>; </div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_encoder.html#aae78662ff4e865b3fa87a7e7c5f894c4">   15</a></span>&#160;    x264_nal_t *<a class="code" href="struct_encoder.html#aae78662ff4e865b3fa87a7e7c5f894c4">nal</a>; </div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <a class="code" href="struct_encoder.html">Encoder</a>; </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_b_u_f_t_y_p_e.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_b_u_f_t_y_p_e.html#a1ee3a3ea7c63917b6266757049f0e78d">   20</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="struct_b_u_f_t_y_p_e.html#a1ee3a3ea7c63917b6266757049f0e78d">start</a>; </div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_b_u_f_t_y_p_e.html#ac71d7979baae81ee2205e040cddb9675">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_b_u_f_t_y_p_e.html#ac71d7979baae81ee2205e040cddb9675">length</a>; </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}<a class="code" href="struct_b_u_f_t_y_p_e.html">BUFTYPE</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="struct_encoder_html_a6b79affabf2ca3b4c3b71d79f9e61236"><div class="ttname"><a href="struct_encoder.html#a6b79affabf2ca3b4c3b71d79f9e61236">Encoder::picture</a></div><div class="ttdeci">x264_picture_t * picture</div><div class="ttdoc">图像参数指针 </div><div class="ttdef"><b>Definition:</b> encoder_define.hh:14</div></div>
+<div class="ttc" id="struct_encoder_html_a6844eefdfc8109863dff5db77988de75"><div class="ttname"><a href="struct_encoder.html#a6844eefdfc8109863dff5db77988de75">Encoder::param</a></div><div class="ttdeci">x264_param_t * param</div><div class="ttdoc">编码器参数指针 </div><div class="ttdef"><b>Definition:</b> encoder_define.hh:12</div></div>
+<div class="ttc" id="struct_encoder_html"><div class="ttname"><a href="struct_encoder.html">Encoder</a></div><div class="ttdef"><b>Definition:</b> encoder_define.hh:10</div></div>
+<div class="ttc" id="struct_encoder_html_aae78662ff4e865b3fa87a7e7c5f894c4"><div class="ttname"><a href="struct_encoder.html#aae78662ff4e865b3fa87a7e7c5f894c4">Encoder::nal</a></div><div class="ttdeci">x264_nal_t * nal</div><div class="ttdoc">NAL头参数指针 </div><div class="ttdef"><b>Definition:</b> encoder_define.hh:15</div></div>
+<div class="ttc" id="struct_b_u_f_t_y_p_e_html"><div class="ttname"><a href="struct_b_u_f_t_y_p_e.html">BUFTYPE</a></div><div class="ttdef"><b>Definition:</b> encoder_define.hh:18</div></div>
+<div class="ttc" id="struct_b_u_f_t_y_p_e_html_a1ee3a3ea7c63917b6266757049f0e78d"><div class="ttname"><a href="struct_b_u_f_t_y_p_e.html#a1ee3a3ea7c63917b6266757049f0e78d">BUFTYPE::start</a></div><div class="ttdeci">char * start</div><div class="ttdoc">数据起始地址 </div><div class="ttdef"><b>Definition:</b> encoder_define.hh:20</div></div>
+<div class="ttc" id="struct_encoder_html_af5a2b0d4bbbfecf57a4cd357cb8a9e8b"><div class="ttname"><a href="struct_encoder.html#af5a2b0d4bbbfecf57a4cd357cb8a9e8b">Encoder::handle</a></div><div class="ttdeci">x264_t * handle</div><div class="ttdoc">编码器句柄指针 </div><div class="ttdef"><b>Definition:</b> encoder_define.hh:13</div></div>
+<div class="ttc" id="struct_b_u_f_t_y_p_e_html_ac71d7979baae81ee2205e040cddb9675"><div class="ttname"><a href="struct_b_u_f_t_y_p_e.html#ac71d7979baae81ee2205e040cddb9675">BUFTYPE::length</a></div><div class="ttdeci">int length</div><div class="ttdoc">数据长度 </div><div class="ttdef"><b>Definition:</b> encoder_define.hh:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="encoder__define_8hh.html">encoder_define.hh</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

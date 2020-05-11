@@ -1,0 +1,105 @@
+\hypertarget{class_device}{}\section{Device类 参考}
+\label{class_device}\index{Device@{Device}}
+
+
+Device 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_device__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_device_a177a1d7f5a34d87fd34f5dbaff9047cc}\label{class_device_a177a1d7f5a34d87fd34f5dbaff9047cc}} 
+void \hyperlink{class_device_a177a1d7f5a34d87fd34f5dbaff9047cc}{init\+\_\+mmap} (void)
+\begin{DoxyCompactList}\small\item\em 初始化摄像头内存映射 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_device_a59fed87c831b9ca0087538041e1063fe}\label{class_device_a59fed87c831b9ca0087538041e1063fe}} 
+void {\bfseries init\+\_\+camera} (void)
+\item 
+\mbox{\Hypertarget{class_device_ad733c28e25f18940a4b9c0f8c3bd5bbf}\label{class_device_ad733c28e25f18940a4b9c0f8c3bd5bbf}} 
+void {\bfseries init\+\_\+encoder} (void)
+\item 
+\mbox{\Hypertarget{class_device_a207f256202dc6bcf3d431d7122a92027}\label{class_device_a207f256202dc6bcf3d431d7122a92027}} 
+void {\bfseries open\+\_\+camera} (const char $\ast$devicename)
+\item 
+\mbox{\Hypertarget{class_device_a058dd0e33e2b9c9f7cd13e5e9c4d9e76}\label{class_device_a058dd0e33e2b9c9f7cd13e5e9c4d9e76}} 
+void {\bfseries close\+\_\+camera} (void)
+\item 
+\mbox{\Hypertarget{class_device_a97b7011e07ec9d92f04aeaedfe6c1ae5}\label{class_device_a97b7011e07ec9d92f04aeaedfe6c1ae5}} 
+void {\bfseries read\+\_\+one\+\_\+frame} (unsigned int \&framesize, unsigned char $\ast$f\+To)
+\item 
+\mbox{\Hypertarget{class_device_a57e890d08316be5b695f332e7ec833e7}\label{class_device_a57e890d08316be5b695f332e7ec833e7}} 
+void {\bfseries getnextframe} (unsigned int \&framesize, unsigned char $\ast$f\+To)
+\item 
+\mbox{\Hypertarget{class_device_a91edaba797d1b176fd3077e6a2c85fe0}\label{class_device_a91edaba797d1b176fd3077e6a2c85fe0}} 
+void {\bfseries start\+\_\+capture} (void)
+\item 
+\mbox{\Hypertarget{class_device_a760f2530ad1a3056ac13d7aaae9448f4}\label{class_device_a760f2530ad1a3056ac13d7aaae9448f4}} 
+void {\bfseries stop\+\_\+capture} (void)
+\item 
+\mbox{\Hypertarget{class_device_a6fc123dd764c6fbda18eb69ea840a4e9}\label{class_device_a6fc123dd764c6fbda18eb69ea840a4e9}} 
+void {\bfseries close\+\_\+encoder} ()
+\item 
+\mbox{\Hypertarget{class_device_a559094bf6961e9eba3712dc8591edca8}\label{class_device_a559094bf6961e9eba3712dc8591edca8}} 
+int {\bfseries camera\+\_\+able\+\_\+read} (void)
+\item 
+\mbox{\Hypertarget{class_device_aaac3f374b03d0f56f280351d5f4465b4}\label{class_device_aaac3f374b03d0f56f280351d5f4465b4}} 
+void {\bfseries compress\+\_\+begin} (\hyperlink{struct_encoder}{Encoder} $\ast$en, int width, int height)
+\item 
+\mbox{\Hypertarget{class_device_a6fbc13710308c3801e72a90ec3967a03}\label{class_device_a6fbc13710308c3801e72a90ec3967a03}} 
+int {\bfseries compress\+\_\+frame} (\hyperlink{struct_encoder}{Encoder} $\ast$en, int type, char $\ast$in, int len, char $\ast$out)
+\item 
+\mbox{\Hypertarget{class_device_a811c381a9def366464189533b2a82130}\label{class_device_a811c381a9def366464189533b2a82130}} 
+void {\bfseries compress\+\_\+end} (\hyperlink{struct_encoder}{Encoder} $\ast$en)
+\item 
+\mbox{\Hypertarget{class_device_a5a7aa55079fe5793415fbfc390de7c26}\label{class_device_a5a7aa55079fe5793415fbfc390de7c26}} 
+void {\bfseries Init} (const char $\ast$devicename, int width, int height)
+\item 
+\mbox{\Hypertarget{class_device_a81e1f0d8a92771c4855d2831cfad77cc}\label{class_device_a81e1f0d8a92771c4855d2831cfad77cc}} 
+void {\bfseries intoloop} ()
+\item 
+\mbox{\Hypertarget{class_device_a86bcc50a18a2ce9af12e97a7febb1651}\label{class_device_a86bcc50a18a2ce9af12e97a7febb1651}} 
+void {\bfseries Destory} ()
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_device_a471c31ce4b894f22afec70d1f1590782}\label{class_device_a471c31ce4b894f22afec70d1f1590782}} 
+int {\bfseries fd}
+\item 
+\mbox{\Hypertarget{class_device_a3d152911845541f5446ee80a495b6f7c}\label{class_device_a3d152911845541f5446ee80a495b6f7c}} 
+F\+I\+LE $\ast$ {\bfseries save\+\_\+fd}
+\item 
+\mbox{\Hypertarget{class_device_ab9d36e547656f839d6de58d7a32d2f3c}\label{class_device_ab9d36e547656f839d6de58d7a32d2f3c}} 
+int {\bfseries n\+\_\+nal}
+\item 
+\mbox{\Hypertarget{class_device_a6feb7c01530f5a6da3591f879a288949}\label{class_device_a6feb7c01530f5a6da3591f879a288949}} 
+int {\bfseries frame\+\_\+len}
+\item 
+\mbox{\Hypertarget{class_device_ac869882992a1eacf0b20c2626fc50297}\label{class_device_ac869882992a1eacf0b20c2626fc50297}} 
+char $\ast$ {\bfseries h264\+\_\+buf}
+\item 
+\mbox{\Hypertarget{class_device_a38e039235792703a1d8dfc55856c89fd}\label{class_device_a38e039235792703a1d8dfc55856c89fd}} 
+unsigned int {\bfseries n\+\_\+buffer}
+\item 
+\mbox{\Hypertarget{class_device_aaa76044ff91ebd8322df4050c782b8cb}\label{class_device_aaa76044ff91ebd8322df4050c782b8cb}} 
+\hyperlink{struct_encoder}{Encoder} {\bfseries en}
+\item 
+\mbox{\Hypertarget{class_device_afb3ee5767b665069c4d092f958c5895a}\label{class_device_afb3ee5767b665069c4d092f958c5895a}} 
+F\+I\+LE $\ast$ {\bfseries h264\+\_\+fp}
+\item 
+\mbox{\Hypertarget{class_device_a57193e929419148917d556eb6c7a912e}\label{class_device_a57193e929419148917d556eb6c7a912e}} 
+\hyperlink{struct_b_u_f_t_y_p_e}{B\+U\+F\+T\+Y\+PE} $\ast$ {\bfseries usr\+\_\+buf}
+\item 
+\mbox{\Hypertarget{class_device_ad09954e6b78dabb3948a4fa9e5d08dfc}\label{class_device_ad09954e6b78dabb3948a4fa9e5d08dfc}} 
+F\+I\+LE $\ast$ {\bfseries pipe\+\_\+fd}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+camera.\+hh\item 
+camera.\+cpp\end{DoxyCompactItemize}

@@ -267,7 +267,6 @@ void Device::read_one_frame(unsigned int &framesize, unsigned char *fTo)
 	/*此处反映了实时帧率，单摄像头的时候相对帧率跳动不大，但是多摄像头的时候会因为调度的问题可能连续读几帧导致看到帧率瞬时飙升*/
 	printf("Device: %s, timestamp: %d.%06d , duration = %.6f, framerate = %.2f\n",mDevicename, (int)tv.tv_sec, (int)tv.tv_usec, duration, 1/duration);
 	last_time = tv;
-	// frame_len = compress_frame(&en, -1, usr_buf[buf.index].start, usr_buf[buf.index].length, h264_buf);
 	framesize = compress_frame(&en, -1, usr_buf[buf.index].start, usr_buf[buf.index].length, (char *)fTo);
 
 	if (-1 == ioctl(fd, VIDIOC_QBUF, &buf))
@@ -339,7 +338,6 @@ int Device::camera_able_read(void)
 void Device::init_encoder(void)
 {
 	compress_begin(&en, mWidth, mHeight);
-	h264_buf = (char *)malloc(mWidth * mHeight * 2);
 }
 
 void Device::compress_begin(Encoder *en, int width, int height)
@@ -465,7 +463,6 @@ void Device::getnextframe(unsigned int &framesize, unsigned char *fTo)
 	{
 
 		read_one_frame(framesize, fTo);
-		// fwrite(Camera.h264_buf, Camera.frame_len, 1, Camera.pipe_fd);
 	}
 	else
 	{
@@ -494,7 +491,6 @@ void Device::compress_end(Encoder *en)
 void Device::close_encoder()
 {
 	compress_end(&en);
-	free(h264_buf);
 }
 
 void Device::Init(const char *devicename, int width, int height)

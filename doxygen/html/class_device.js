@@ -1,0 +1,28 @@
+var class_device =
+[
+    [ "~Device", "class_device.html#a9dabc419c8d8df3a686c33ce042bc99a", null ],
+    [ "camera_able_read", "class_device.html#a559094bf6961e9eba3712dc8591edca8", null ],
+    [ "close_camera", "class_device.html#a058dd0e33e2b9c9f7cd13e5e9c4d9e76", null ],
+    [ "close_encoder", "class_device.html#a6fc123dd764c6fbda18eb69ea840a4e9", null ],
+    [ "compress_begin", "class_device.html#aaac3f374b03d0f56f280351d5f4465b4", null ],
+    [ "compress_end", "class_device.html#a811c381a9def366464189533b2a82130", null ],
+    [ "compress_frame", "class_device.html#a6fbc13710308c3801e72a90ec3967a03", null ],
+    [ "Destory", "class_device.html#a86bcc50a18a2ce9af12e97a7febb1651", null ],
+    [ "getnextframe", "class_device.html#a57e890d08316be5b695f332e7ec833e7", null ],
+    [ "Init", "class_device.html#a5a7aa55079fe5793415fbfc390de7c26", null ],
+    [ "init_camera", "class_device.html#a59fed87c831b9ca0087538041e1063fe", null ],
+    [ "init_encoder", "class_device.html#ad733c28e25f18940a4b9c0f8c3bd5bbf", null ],
+    [ "init_mmap", "class_device.html#a177a1d7f5a34d87fd34f5dbaff9047cc", null ],
+    [ "open_camera", "class_device.html#a207f256202dc6bcf3d431d7122a92027", null ],
+    [ "read_one_frame", "class_device.html#a97b7011e07ec9d92f04aeaedfe6c1ae5", null ],
+    [ "start_capture", "class_device.html#a91edaba797d1b176fd3077e6a2c85fe0", null ],
+    [ "stop_capture", "class_device.html#a760f2530ad1a3056ac13d7aaae9448f4", null ],
+    [ "en", "class_device.html#aaa76044ff91ebd8322df4050c782b8cb", null ],
+    [ "fd", "class_device.html#a471c31ce4b894f22afec70d1f1590782", null ],
+    [ "last_time", "class_device.html#a00ac41dc00796cd07b90133740f2a50a", null ],
+    [ "mDevicename", "class_device.html#a84eb00aacf8dc6f3fa15b76e62e375b8", null ],
+    [ "mHeight", "class_device.html#afbbb9116a021ef45d66c05f23a780416", null ],
+    [ "mWidth", "class_device.html#aa020090bbeb0f4156f3fae5a2f0f81b7", null ],
+    [ "n_buffer", "class_device.html#a38e039235792703a1d8dfc55856c89fd", null ],
+    [ "usr_buf", "class_device.html#a57193e929419148917d556eb6c7a912e", null ]
+];

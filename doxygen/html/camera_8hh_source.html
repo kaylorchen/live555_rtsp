@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>live555_rtsp: camera.hh 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">live555_rtsp
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">USB摄像头RTSP推流</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('camera_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">camera.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="camera_8hh.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef _CAMERA_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define _CAMERA_HH</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;FramedSource.hh&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;UsageEnvironment.hh&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="encoder__define_8hh.html">encoder_define.hh</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_device.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_device.html">Device</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a177a1d7f5a34d87fd34f5dbaff9047cc">init_mmap</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a59fed87c831b9ca0087538041e1063fe">init_camera</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#ad733c28e25f18940a4b9c0f8c3bd5bbf">init_encoder</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a207f256202dc6bcf3d431d7122a92027">open_camera</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *devicename);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a058dd0e33e2b9c9f7cd13e5e9c4d9e76">close_camera</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a97b7011e07ec9d92f04aeaedfe6c1ae5">read_one_frame</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;framesize, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *fTo);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a57e890d08316be5b695f332e7ec833e7">getnextframe</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;framesize, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *fTo);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a91edaba797d1b176fd3077e6a2c85fe0">start_capture</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a760f2530ad1a3056ac13d7aaae9448f4">stop_capture</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a6fc123dd764c6fbda18eb69ea840a4e9">close_encoder</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_device.html#a559094bf6961e9eba3712dc8591edca8">camera_able_read</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#aaac3f374b03d0f56f280351d5f4465b4">compress_begin</a>(<a class="code" href="struct_encoder.html">Encoder</a> *<a class="code" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">en</a>, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_device.html#a6fbc13710308c3801e72a90ec3967a03">compress_frame</a>(<a class="code" href="struct_encoder.html">Encoder</a> *en, <span class="keywordtype">int</span> type, <span class="keywordtype">char</span> *in, <span class="keywordtype">int</span> len, <span class="keywordtype">char</span> *out);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a811c381a9def366464189533b2a82130">compress_end</a>(<a class="code" href="struct_encoder.html">Encoder</a> *en);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a5a7aa55079fe5793415fbfc390de7c26">Init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *devicename, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_device.html#a86bcc50a18a2ce9af12e97a7febb1651">Destory</a>();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">~Device</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_device.html#a471c31ce4b894f22afec70d1f1590782">   68</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_device.html#a471c31ce4b894f22afec70d1f1590782">fd</a>; </div><div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_device.html#a38e039235792703a1d8dfc55856c89fd">   69</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_device.html#a38e039235792703a1d8dfc55856c89fd">n_buffer</a>; </div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">   70</a></span>&#160;    <a class="code" href="struct_encoder.html">Encoder</a> <a class="code" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">en</a>; </div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_device.html#a57193e929419148917d556eb6c7a912e">   71</a></span>&#160;    <a class="code" href="struct_b_u_f_t_y_p_e.html">BUFTYPE</a> *<a class="code" href="class_device.html#a57193e929419148917d556eb6c7a912e">usr_buf</a>; </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_device.html#afbbb9116a021ef45d66c05f23a780416">   74</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_device.html#afbbb9116a021ef45d66c05f23a780416">mHeight</a>; </div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_device.html#aa020090bbeb0f4156f3fae5a2f0f81b7">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_device.html#aa020090bbeb0f4156f3fae5a2f0f81b7">mWidth</a>;</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_device.html#a84eb00aacf8dc6f3fa15b76e62e375b8">   76</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_device.html#a84eb00aacf8dc6f3fa15b76e62e375b8">mDevicename</a>; </div><div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_device.html#a00ac41dc00796cd07b90133740f2a50a">   77</a></span>&#160;    <span class="keyword">struct </span>timeval <a class="code" href="class_device.html#a00ac41dc00796cd07b90133740f2a50a">last_time</a> = {0, 0}; </div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_device_html_aaa76044ff91ebd8322df4050c782b8cb"><div class="ttname"><a href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">Device::en</a></div><div class="ttdeci">Encoder en</div><div class="ttdoc">H264结构体 </div><div class="ttdef"><b>Definition:</b> camera.hh:70</div></div>
+<div class="ttc" id="class_device_html_a6fc123dd764c6fbda18eb69ea840a4e9"><div class="ttname"><a href="class_device.html#a6fc123dd764c6fbda18eb69ea840a4e9">Device::close_encoder</a></div><div class="ttdeci">void close_encoder()</div><div class="ttdoc">关闭H264编码器 </div><div class="ttdef"><b>Definition:</b> camera.cpp:491</div></div>
+<div class="ttc" id="class_device_html_a38e039235792703a1d8dfc55856c89fd"><div class="ttname"><a href="class_device.html#a38e039235792703a1d8dfc55856c89fd">Device::n_buffer</a></div><div class="ttdeci">unsigned int n_buffer</div><div class="ttdoc">临时变量，多处用于循环下标使用 </div><div class="ttdef"><b>Definition:</b> camera.hh:69</div></div>
+<div class="ttc" id="encoder__define_8hh_html"><div class="ttname"><a href="encoder__define_8hh.html">encoder_define.hh</a></div></div>
+<div class="ttc" id="class_device_html_a6fbc13710308c3801e72a90ec3967a03"><div class="ttname"><a href="class_device.html#a6fbc13710308c3801e72a90ec3967a03">Device::compress_frame</a></div><div class="ttdeci">int compress_frame(Encoder *en, int type, char *in, int len, char *out)</div><div class="ttdoc">原始数据编码成H264数据帧 </div><div class="ttdef"><b>Definition:</b> camera.cpp:397</div></div>
+<div class="ttc" id="class_device_html_a91edaba797d1b176fd3077e6a2c85fe0"><div class="ttname"><a href="class_device.html#a91edaba797d1b176fd3077e6a2c85fe0">Device::start_capture</a></div><div class="ttdeci">void start_capture(void)</div><div class="ttdoc">启动摄像头图像捕获 </div><div class="ttdef"><b>Definition:</b> camera.cpp:217</div></div>
+<div class="ttc" id="class_device_html_aaac3f374b03d0f56f280351d5f4465b4"><div class="ttname"><a href="class_device.html#aaac3f374b03d0f56f280351d5f4465b4">Device::compress_begin</a></div><div class="ttdeci">void compress_begin(Encoder *en, int width, int height)</div><div class="ttdoc">配置H264压缩参数 </div><div class="ttdef"><b>Definition:</b> camera.cpp:343</div></div>
+<div class="ttc" id="class_device_html"><div class="ttname"><a href="class_device.html">Device</a></div><div class="ttdoc">这是一个配置摄像头和H264编码器的类 </div><div class="ttdef"><b>Definition:</b> camera.hh:11</div></div>
+<div class="ttc" id="class_device_html_a5a7aa55079fe5793415fbfc390de7c26"><div class="ttname"><a href="class_device.html#a5a7aa55079fe5793415fbfc390de7c26">Device::Init</a></div><div class="ttdeci">void Init(const char *devicename, int width, int height)</div><div class="ttdoc">初始化该类，即初始化摄像头和编码器 </div><div class="ttdef"><b>Definition:</b> camera.cpp:496</div></div>
+<div class="ttc" id="class_device_html_a058dd0e33e2b9c9f7cd13e5e9c4d9e76"><div class="ttname"><a href="class_device.html#a058dd0e33e2b9c9f7cd13e5e9c4d9e76">Device::close_camera</a></div><div class="ttdeci">void close_camera(void)</div><div class="ttdoc">关闭摄像头 </div><div class="ttdef"><b>Definition:</b> camera.cpp:290</div></div>
+<div class="ttc" id="class_device_html_a84eb00aacf8dc6f3fa15b76e62e375b8"><div class="ttname"><a href="class_device.html#a84eb00aacf8dc6f3fa15b76e62e375b8">Device::mDevicename</a></div><div class="ttdeci">const char * mDevicename</div><div class="ttdoc">摄像头设备名 </div><div class="ttdef"><b>Definition:</b> camera.hh:76</div></div>
+<div class="ttc" id="class_device_html_a57193e929419148917d556eb6c7a912e"><div class="ttname"><a href="class_device.html#a57193e929419148917d556eb6c7a912e">Device::usr_buf</a></div><div class="ttdeci">BUFTYPE * usr_buf</div><div class="ttdoc">BUFTYPE指针 </div><div class="ttdef"><b>Definition:</b> camera.hh:71</div></div>
+<div class="ttc" id="struct_encoder_html"><div class="ttname"><a href="struct_encoder.html">Encoder</a></div><div class="ttdef"><b>Definition:</b> encoder_define.hh:10</div></div>
+<div class="ttc" id="struct_b_u_f_t_y_p_e_html"><div class="ttname"><a href="struct_b_u_f_t_y_p_e.html">BUFTYPE</a></div><div class="ttdef"><b>Definition:</b> encoder_define.hh:18</div></div>
+<div class="ttc" id="class_device_html_a760f2530ad1a3056ac13d7aaae9448f4"><div class="ttname"><a href="class_device.html#a760f2530ad1a3056ac13d7aaae9448f4">Device::stop_capture</a></div><div class="ttdeci">void stop_capture(void)</div><div class="ttdoc">停止摄像头图像捕获 </div><div class="ttdef"><b>Definition:</b> camera.cpp:279</div></div>
+<div class="ttc" id="class_device_html_a97b7011e07ec9d92f04aeaedfe6c1ae5"><div class="ttname"><a href="class_device.html#a97b7011e07ec9d92f04aeaedfe6c1ae5">Device::read_one_frame</a></div><div class="ttdeci">void read_one_frame(unsigned int &amp;framesize, unsigned char *fTo)</div><div class="ttdoc">从缓存中读取一帧数据并编码成H264格式 </div><div class="ttdef"><b>Definition:</b> camera.cpp:247</div></div>
+<div class="ttc" id="class_device_html_ad733c28e25f18940a4b9c0f8c3bd5bbf"><div class="ttname"><a href="class_device.html#ad733c28e25f18940a4b9c0f8c3bd5bbf">Device::init_encoder</a></div><div class="ttdeci">void init_encoder(void)</div><div class="ttdoc">初始化H264编码器 </div><div class="ttdef"><b>Definition:</b> camera.cpp:338</div></div>
+<div class="ttc" id="class_device_html_a811c381a9def366464189533b2a82130"><div class="ttname"><a href="class_device.html#a811c381a9def366464189533b2a82130">Device::compress_end</a></div><div class="ttdeci">void compress_end(Encoder *en)</div><div class="ttdoc">关闭已经配置的编码器 </div><div class="ttdef"><b>Definition:</b> camera.cpp:472</div></div>
+<div class="ttc" id="class_device_html_a86bcc50a18a2ce9af12e97a7febb1651"><div class="ttname"><a href="class_device.html#a86bcc50a18a2ce9af12e97a7febb1651">Device::Destory</a></div><div class="ttdeci">void Destory()</div><div class="ttdoc">停止图像捕获，关闭编码器和关闭摄像头 </div><div class="ttdef"><b>Definition:</b> camera.cpp:508</div></div>
+<div class="ttc" id="class_device_html_a177a1d7f5a34d87fd34f5dbaff9047cc"><div class="ttname"><a href="class_device.html#a177a1d7f5a34d87fd34f5dbaff9047cc">Device::init_mmap</a></div><div class="ttdeci">void init_mmap(void)</div><div class="ttdoc">初始化摄像头内存映射 </div><div class="ttdef"><b>Definition:</b> camera.cpp:24</div></div>
+<div class="ttc" id="class_device_html_a57e890d08316be5b695f332e7ec833e7"><div class="ttname"><a href="class_device.html#a57e890d08316be5b695f332e7ec833e7">Device::getnextframe</a></div><div class="ttdeci">void getnextframe(unsigned int &amp;framesize, unsigned char *fTo)</div><div class="ttdoc">从缓存中读取下一个H264帧 </div><div class="ttdef"><b>Definition:</b> camera.cpp:458</div></div>
+<div class="ttc" id="class_device_html_aa020090bbeb0f4156f3fae5a2f0f81b7"><div class="ttname"><a href="class_device.html#aa020090bbeb0f4156f3fae5a2f0f81b7">Device::mWidth</a></div><div class="ttdeci">int mWidth</div><div class="ttdoc">图像分辨率宽度 </div><div class="ttdef"><b>Definition:</b> camera.hh:75</div></div>
+<div class="ttc" id="class_device_html_a471c31ce4b894f22afec70d1f1590782"><div class="ttname"><a href="class_device.html#a471c31ce4b894f22afec70d1f1590782">Device::fd</a></div><div class="ttdeci">int fd</div><div class="ttdoc">摄像头设备的句柄 </div><div class="ttdef"><b>Definition:</b> camera.hh:68</div></div>
+<div class="ttc" id="class_device_html_a59fed87c831b9ca0087538041e1063fe"><div class="ttname"><a href="class_device.html#a59fed87c831b9ca0087538041e1063fe">Device::init_camera</a></div><div class="ttdeci">void init_camera(void)</div><div class="ttdoc">初始化摄像头 </div><div class="ttdef"><b>Definition:</b> camera.cpp:91</div></div>
+<div class="ttc" id="class_device_html_a00ac41dc00796cd07b90133740f2a50a"><div class="ttname"><a href="class_device.html#a00ac41dc00796cd07b90133740f2a50a">Device::last_time</a></div><div class="ttdeci">struct timeval last_time</div><div class="ttdoc">上一帧的编码起始时间 </div><div class="ttdef"><b>Definition:</b> camera.hh:77</div></div>
+<div class="ttc" id="class_device_html_a559094bf6961e9eba3712dc8591edca8"><div class="ttname"><a href="class_device.html#a559094bf6961e9eba3712dc8591edca8">Device::camera_able_read</a></div><div class="ttdeci">int camera_able_read(void)</div><div class="ttdoc">检测摄像头是否可读 </div><div class="ttdef"><b>Definition:</b> camera.cpp:309</div></div>
+<div class="ttc" id="class_device_html_a9dabc419c8d8df3a686c33ce042bc99a"><div class="ttname"><a href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">Device::~Device</a></div><div class="ttdeci">~Device()</div><div class="ttdoc">Device类的析构函数 </div><div class="ttdef"><b>Definition:</b> camera.cpp:515</div></div>
+<div class="ttc" id="class_device_html_afbbb9116a021ef45d66c05f23a780416"><div class="ttname"><a href="class_device.html#afbbb9116a021ef45d66c05f23a780416">Device::mHeight</a></div><div class="ttdeci">int mHeight</div><div class="ttdoc">图像分辨率高度 </div><div class="ttdef"><b>Definition:</b> camera.hh:74</div></div>
+<div class="ttc" id="class_device_html_a207f256202dc6bcf3d431d7122a92027"><div class="ttname"><a href="class_device.html#a207f256202dc6bcf3d431d7122a92027">Device::open_camera</a></div><div class="ttdeci">void open_camera(const char *devicename)</div><div class="ttdoc">打开摄像头 </div><div class="ttdef"><b>Definition:</b> camera.cpp:73</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="camera_8hh.html">camera.hh</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

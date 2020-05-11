@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>live555_rtsp: Device类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">live555_rtsp
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">USB摄像头RTSP推流</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_device.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_device-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Device类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>这是一个配置摄像头和H264编码器的类  
+ <a href="class_device.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="camera_8hh_source.html">camera.hh</a>&gt;</code></p>
+<div class="dynheader">
+Device 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_device__coll__graph.png" border="0" usemap="#_device_coll__map" alt="Collaboration graph"/></div>
+<map name="_device_coll__map" id="_device_coll__map">
+<area shape="rect" id="node2" href="struct_encoder.html" title="Encoder" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node3" href="struct_b_u_f_t_y_p_e.html" title="BUFTYPE" alt="" coords="100,5,184,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a177a1d7f5a34d87fd34f5dbaff9047cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a177a1d7f5a34d87fd34f5dbaff9047cc">init_mmap</a> (void)</td></tr>
+<tr class="memdesc:a177a1d7f5a34d87fd34f5dbaff9047cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化摄像头内存映射  <a href="#a177a1d7f5a34d87fd34f5dbaff9047cc">更多...</a><br /></td></tr>
+<tr class="separator:a177a1d7f5a34d87fd34f5dbaff9047cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fed87c831b9ca0087538041e1063fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a59fed87c831b9ca0087538041e1063fe">init_camera</a> (void)</td></tr>
+<tr class="memdesc:a59fed87c831b9ca0087538041e1063fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化摄像头  <a href="#a59fed87c831b9ca0087538041e1063fe">更多...</a><br /></td></tr>
+<tr class="separator:a59fed87c831b9ca0087538041e1063fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad733c28e25f18940a4b9c0f8c3bd5bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ad733c28e25f18940a4b9c0f8c3bd5bbf">init_encoder</a> (void)</td></tr>
+<tr class="memdesc:ad733c28e25f18940a4b9c0f8c3bd5bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化H264编码器  <a href="#ad733c28e25f18940a4b9c0f8c3bd5bbf">更多...</a><br /></td></tr>
+<tr class="separator:ad733c28e25f18940a4b9c0f8c3bd5bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207f256202dc6bcf3d431d7122a92027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a207f256202dc6bcf3d431d7122a92027">open_camera</a> (const char *devicename)</td></tr>
+<tr class="memdesc:a207f256202dc6bcf3d431d7122a92027"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开摄像头  <a href="#a207f256202dc6bcf3d431d7122a92027">更多...</a><br /></td></tr>
+<tr class="separator:a207f256202dc6bcf3d431d7122a92027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058dd0e33e2b9c9f7cd13e5e9c4d9e76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a058dd0e33e2b9c9f7cd13e5e9c4d9e76">close_camera</a> (void)</td></tr>
+<tr class="memdesc:a058dd0e33e2b9c9f7cd13e5e9c4d9e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭摄像头  <a href="#a058dd0e33e2b9c9f7cd13e5e9c4d9e76">更多...</a><br /></td></tr>
+<tr class="separator:a058dd0e33e2b9c9f7cd13e5e9c4d9e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b7011e07ec9d92f04aeaedfe6c1ae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a97b7011e07ec9d92f04aeaedfe6c1ae5">read_one_frame</a> (unsigned int &amp;framesize, unsigned char *fTo)</td></tr>
+<tr class="memdesc:a97b7011e07ec9d92f04aeaedfe6c1ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">从缓存中读取一帧数据并编码成H264格式  <a href="#a97b7011e07ec9d92f04aeaedfe6c1ae5">更多...</a><br /></td></tr>
+<tr class="separator:a97b7011e07ec9d92f04aeaedfe6c1ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e890d08316be5b695f332e7ec833e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a57e890d08316be5b695f332e7ec833e7">getnextframe</a> (unsigned int &amp;framesize, unsigned char *fTo)</td></tr>
+<tr class="memdesc:a57e890d08316be5b695f332e7ec833e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">从缓存中读取下一个H264帧  <a href="#a57e890d08316be5b695f332e7ec833e7">更多...</a><br /></td></tr>
+<tr class="separator:a57e890d08316be5b695f332e7ec833e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91edaba797d1b176fd3077e6a2c85fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a91edaba797d1b176fd3077e6a2c85fe0">start_capture</a> (void)</td></tr>
+<tr class="memdesc:a91edaba797d1b176fd3077e6a2c85fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动摄像头图像捕获  <a href="#a91edaba797d1b176fd3077e6a2c85fe0">更多...</a><br /></td></tr>
+<tr class="separator:a91edaba797d1b176fd3077e6a2c85fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760f2530ad1a3056ac13d7aaae9448f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a760f2530ad1a3056ac13d7aaae9448f4">stop_capture</a> (void)</td></tr>
+<tr class="memdesc:a760f2530ad1a3056ac13d7aaae9448f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止摄像头图像捕获  <a href="#a760f2530ad1a3056ac13d7aaae9448f4">更多...</a><br /></td></tr>
+<tr class="separator:a760f2530ad1a3056ac13d7aaae9448f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc123dd764c6fbda18eb69ea840a4e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a6fc123dd764c6fbda18eb69ea840a4e9">close_encoder</a> ()</td></tr>
+<tr class="memdesc:a6fc123dd764c6fbda18eb69ea840a4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭H264编码器  <a href="#a6fc123dd764c6fbda18eb69ea840a4e9">更多...</a><br /></td></tr>
+<tr class="separator:a6fc123dd764c6fbda18eb69ea840a4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559094bf6961e9eba3712dc8591edca8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a559094bf6961e9eba3712dc8591edca8">camera_able_read</a> (void)</td></tr>
+<tr class="memdesc:a559094bf6961e9eba3712dc8591edca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测摄像头是否可读  <a href="#a559094bf6961e9eba3712dc8591edca8">更多...</a><br /></td></tr>
+<tr class="separator:a559094bf6961e9eba3712dc8591edca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac3f374b03d0f56f280351d5f4465b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#aaac3f374b03d0f56f280351d5f4465b4">compress_begin</a> (<a class="el" href="struct_encoder.html">Encoder</a> *<a class="el" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">en</a>, int width, int height)</td></tr>
+<tr class="memdesc:aaac3f374b03d0f56f280351d5f4465b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置H264压缩参数  <a href="#aaac3f374b03d0f56f280351d5f4465b4">更多...</a><br /></td></tr>
+<tr class="separator:aaac3f374b03d0f56f280351d5f4465b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbc13710308c3801e72a90ec3967a03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a6fbc13710308c3801e72a90ec3967a03">compress_frame</a> (<a class="el" href="struct_encoder.html">Encoder</a> *<a class="el" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">en</a>, int type, char *in, int len, char *out)</td></tr>
+<tr class="memdesc:a6fbc13710308c3801e72a90ec3967a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">原始数据编码成H264数据帧  <a href="#a6fbc13710308c3801e72a90ec3967a03">更多...</a><br /></td></tr>
+<tr class="separator:a6fbc13710308c3801e72a90ec3967a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811c381a9def366464189533b2a82130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a811c381a9def366464189533b2a82130">compress_end</a> (<a class="el" href="struct_encoder.html">Encoder</a> *<a class="el" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">en</a>)</td></tr>
+<tr class="memdesc:a811c381a9def366464189533b2a82130"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭已经配置的编码器  <a href="#a811c381a9def366464189533b2a82130">更多...</a><br /></td></tr>
+<tr class="separator:a811c381a9def366464189533b2a82130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7aa55079fe5793415fbfc390de7c26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a5a7aa55079fe5793415fbfc390de7c26">Init</a> (const char *devicename, int width, int height)</td></tr>
+<tr class="memdesc:a5a7aa55079fe5793415fbfc390de7c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化该类，即初始化摄像头和编码器  <a href="#a5a7aa55079fe5793415fbfc390de7c26">更多...</a><br /></td></tr>
+<tr class="separator:a5a7aa55079fe5793415fbfc390de7c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bcc50a18a2ce9af12e97a7febb1651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a86bcc50a18a2ce9af12e97a7febb1651">Destory</a> ()</td></tr>
+<tr class="memdesc:a86bcc50a18a2ce9af12e97a7febb1651"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止图像捕获，关闭编码器和关闭摄像头  <a href="#a86bcc50a18a2ce9af12e97a7febb1651">更多...</a><br /></td></tr>
+<tr class="separator:a86bcc50a18a2ce9af12e97a7febb1651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dabc419c8d8df3a686c33ce042bc99a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">~Device</a> ()</td></tr>
+<tr class="memdesc:a9dabc419c8d8df3a686c33ce042bc99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device类的析构函数  <a href="#a9dabc419c8d8df3a686c33ce042bc99a">更多...</a><br /></td></tr>
+<tr class="separator:a9dabc419c8d8df3a686c33ce042bc99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a471c31ce4b894f22afec70d1f1590782"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a471c31ce4b894f22afec70d1f1590782">fd</a></td></tr>
+<tr class="memdesc:a471c31ce4b894f22afec70d1f1590782"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头设备的句柄  <a href="#a471c31ce4b894f22afec70d1f1590782">更多...</a><br /></td></tr>
+<tr class="separator:a471c31ce4b894f22afec70d1f1590782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e039235792703a1d8dfc55856c89fd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a38e039235792703a1d8dfc55856c89fd">n_buffer</a></td></tr>
+<tr class="memdesc:a38e039235792703a1d8dfc55856c89fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">临时变量，多处用于循环下标使用  <a href="#a38e039235792703a1d8dfc55856c89fd">更多...</a><br /></td></tr>
+<tr class="separator:a38e039235792703a1d8dfc55856c89fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa76044ff91ebd8322df4050c782b8cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_encoder.html">Encoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#aaa76044ff91ebd8322df4050c782b8cb">en</a></td></tr>
+<tr class="memdesc:aaa76044ff91ebd8322df4050c782b8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">H264结构体  <a href="#aaa76044ff91ebd8322df4050c782b8cb">更多...</a><br /></td></tr>
+<tr class="separator:aaa76044ff91ebd8322df4050c782b8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57193e929419148917d556eb6c7a912e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_b_u_f_t_y_p_e.html">BUFTYPE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a57193e929419148917d556eb6c7a912e">usr_buf</a></td></tr>
+<tr class="memdesc:a57193e929419148917d556eb6c7a912e"><td class="mdescLeft">&#160;</td><td class="mdescRight">BUFTYPE指针  <a href="#a57193e929419148917d556eb6c7a912e">更多...</a><br /></td></tr>
+<tr class="separator:a57193e929419148917d556eb6c7a912e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:afbbb9116a021ef45d66c05f23a780416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#afbbb9116a021ef45d66c05f23a780416">mHeight</a></td></tr>
+<tr class="memdesc:afbbb9116a021ef45d66c05f23a780416"><td class="mdescLeft">&#160;</td><td class="mdescRight">图像分辨率高度  <a href="#afbbb9116a021ef45d66c05f23a780416">更多...</a><br /></td></tr>
+<tr class="separator:afbbb9116a021ef45d66c05f23a780416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa020090bbeb0f4156f3fae5a2f0f81b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#aa020090bbeb0f4156f3fae5a2f0f81b7">mWidth</a></td></tr>
+<tr class="memdesc:aa020090bbeb0f4156f3fae5a2f0f81b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">图像分辨率宽度  <a href="#aa020090bbeb0f4156f3fae5a2f0f81b7">更多...</a><br /></td></tr>
+<tr class="separator:aa020090bbeb0f4156f3fae5a2f0f81b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84eb00aacf8dc6f3fa15b76e62e375b8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a84eb00aacf8dc6f3fa15b76e62e375b8">mDevicename</a></td></tr>
+<tr class="memdesc:a84eb00aacf8dc6f3fa15b76e62e375b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头设备名  <a href="#a84eb00aacf8dc6f3fa15b76e62e375b8">更多...</a><br /></td></tr>
+<tr class="separator:a84eb00aacf8dc6f3fa15b76e62e375b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ac41dc00796cd07b90133740f2a50a"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a00ac41dc00796cd07b90133740f2a50a">last_time</a> = {0, 0}</td></tr>
+<tr class="memdesc:a00ac41dc00796cd07b90133740f2a50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">上一帧的编码起始时间  <a href="#a00ac41dc00796cd07b90133740f2a50a">更多...</a><br /></td></tr>
+<tr class="separator:a00ac41dc00796cd07b90133740f2a50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>这是一个配置摄像头和H264编码器的类 </p>
+<p>这个类可以对摄像头进行操作并编码成H264的数据帧 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a9dabc419c8d8df3a686c33ce042bc99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dabc419c8d8df3a686c33ce042bc99a">&#9670;&nbsp;</a></span>~Device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Device::~Device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device类的析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a559094bf6961e9eba3712dc8591edca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559094bf6961e9eba3712dc8591edca8">&#9670;&nbsp;</a></span>camera_able_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Device::camera_able_read </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>检测摄像头是否可读 </p>
+<dl class="section return"><dt>返回</dt><dd>返回摄像头可读状态，大于0为可读 </dd></dl>
+
+</div>
+</div>
+<a id="a058dd0e33e2b9c9f7cd13e5e9c4d9e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058dd0e33e2b9c9f7cd13e5e9c4d9e76">&#9670;&nbsp;</a></span>close_camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::close_camera </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭摄像头 </p>
+
+</div>
+</div>
+<a id="a6fc123dd764c6fbda18eb69ea840a4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc123dd764c6fbda18eb69ea840a4e9">&#9670;&nbsp;</a></span>close_encoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::close_encoder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭H264编码器 </p>
+
+</div>
+</div>
+<a id="aaac3f374b03d0f56f280351d5f4465b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaac3f374b03d0f56f280351d5f4465b4">&#9670;&nbsp;</a></span>compress_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::compress_begin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_encoder.html">Encoder</a> *&#160;</td>
+          <td class="paramname"><em>en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置H264压缩参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">en</td><td>H264编码的结构体指针 </td></tr>
+    <tr><td class="paramname">width</td><td>图像分辨率的宽度 </td></tr>
+    <tr><td class="paramname">height</td><td>图像分辨率的高度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a811c381a9def366464189533b2a82130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811c381a9def366464189533b2a82130">&#9670;&nbsp;</a></span>compress_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::compress_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_encoder.html">Encoder</a> *&#160;</td>
+          <td class="paramname"><em>en</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭已经配置的编码器 </p>
+
+</div>
+</div>
+<a id="a6fbc13710308c3801e72a90ec3967a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbc13710308c3801e72a90ec3967a03">&#9670;&nbsp;</a></span>compress_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Device::compress_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_encoder.html">Encoder</a> *&#160;</td>
+          <td class="paramname"><em>en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>原始数据编码成H264数据帧 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">en</td><td>H264编码的结构体指针 </td></tr>
+    <tr><td class="paramname">type</td><td>H264编码帧的TYPE </td></tr>
+    <tr><td class="paramname">in</td><td>指向原始数据的指针 </td></tr>
+    <tr><td class="paramname">len</td><td>原始数据的长度 </td></tr>
+    <tr><td class="paramname">out</td><td>指向H264数据的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回H264帧的长度 </dd></dl>
+
+</div>
+</div>
+<a id="a86bcc50a18a2ce9af12e97a7febb1651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86bcc50a18a2ce9af12e97a7febb1651">&#9670;&nbsp;</a></span>Destory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::Destory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止图像捕获，关闭编码器和关闭摄像头 </p>
+
+</div>
+</div>
+<a id="a57e890d08316be5b695f332e7ec833e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e890d08316be5b695f332e7ec833e7">&#9670;&nbsp;</a></span>getnextframe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::getnextframe </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>framesize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>fTo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从缓存中读取下一个H264帧 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">framesize</td><td>该H264数据帧的大小 </td></tr>
+    <tr><td class="paramname">fTo</td><td>指向该H264数据帧实际数据的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a7aa55079fe5793415fbfc390de7c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7aa55079fe5793415fbfc390de7c26">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::Init </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>devicename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化该类，即初始化摄像头和编码器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicename</td><td>摄像头设备名，如 /dev/video0 </td></tr>
+    <tr><td class="paramname">width</td><td>图像分辨率的宽度 </td></tr>
+    <tr><td class="paramname">height</td><td>图像分辨率的高度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a59fed87c831b9ca0087538041e1063fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fed87c831b9ca0087538041e1063fe">&#9670;&nbsp;</a></span>init_camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::init_camera </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化摄像头 </p>
+
+</div>
+</div>
+<a id="ad733c28e25f18940a4b9c0f8c3bd5bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad733c28e25f18940a4b9c0f8c3bd5bbf">&#9670;&nbsp;</a></span>init_encoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::init_encoder </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化H264编码器 </p>
+
+</div>
+</div>
+<a id="a177a1d7f5a34d87fd34f5dbaff9047cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177a1d7f5a34d87fd34f5dbaff9047cc">&#9670;&nbsp;</a></span>init_mmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::init_mmap </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化摄像头内存映射 </p>
+
+</div>
+</div>
+<a id="a207f256202dc6bcf3d431d7122a92027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207f256202dc6bcf3d431d7122a92027">&#9670;&nbsp;</a></span>open_camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::open_camera </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>devicename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>打开摄像头 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicename</td><td>摄像头设备名，如 /dev/video0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97b7011e07ec9d92f04aeaedfe6c1ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b7011e07ec9d92f04aeaedfe6c1ae5">&#9670;&nbsp;</a></span>read_one_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::read_one_frame </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>framesize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>fTo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从缓存中读取一帧数据并编码成H264格式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">framesize</td><td>该H264数据帧的大小 </td></tr>
+    <tr><td class="paramname">fTo</td><td>指向该H264数据帧实际数据的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91edaba797d1b176fd3077e6a2c85fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91edaba797d1b176fd3077e6a2c85fe0">&#9670;&nbsp;</a></span>start_capture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::start_capture </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启动摄像头图像捕获 </p>
+
+</div>
+</div>
+<a id="a760f2530ad1a3056ac13d7aaae9448f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760f2530ad1a3056ac13d7aaae9448f4">&#9670;&nbsp;</a></span>stop_capture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::stop_capture </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止摄像头图像捕获 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aaa76044ff91ebd8322df4050c782b8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa76044ff91ebd8322df4050c782b8cb">&#9670;&nbsp;</a></span>en</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_encoder.html">Encoder</a> Device::en</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>H264结构体 </p>
+
+</div>
+</div>
+<a id="a471c31ce4b894f22afec70d1f1590782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a471c31ce4b894f22afec70d1f1590782">&#9670;&nbsp;</a></span>fd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Device::fd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>摄像头设备的句柄 </p>
+
+</div>
+</div>
+<a id="a00ac41dc00796cd07b90133740f2a50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ac41dc00796cd07b90133740f2a50a">&#9670;&nbsp;</a></span>last_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct timeval Device::last_time = {0, 0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上一帧的编码起始时间 </p>
+
+</div>
+</div>
+<a id="a84eb00aacf8dc6f3fa15b76e62e375b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84eb00aacf8dc6f3fa15b76e62e375b8">&#9670;&nbsp;</a></span>mDevicename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Device::mDevicename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>摄像头设备名 </p>
+
+</div>
+</div>
+<a id="afbbb9116a021ef45d66c05f23a780416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbbb9116a021ef45d66c05f23a780416">&#9670;&nbsp;</a></span>mHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Device::mHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图像分辨率高度 </p>
+
+</div>
+</div>
+<a id="aa020090bbeb0f4156f3fae5a2f0f81b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa020090bbeb0f4156f3fae5a2f0f81b7">&#9670;&nbsp;</a></span>mWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Device::mWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图像分辨率宽度 </p>
+
+</div>
+</div>
+<a id="a38e039235792703a1d8dfc55856c89fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e039235792703a1d8dfc55856c89fd">&#9670;&nbsp;</a></span>n_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Device::n_buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>临时变量，多处用于循环下标使用 </p>
+
+</div>
+</div>
+<a id="a57193e929419148917d556eb6c7a912e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57193e929419148917d556eb6c7a912e">&#9670;&nbsp;</a></span>usr_buf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_b_u_f_t_y_p_e.html">BUFTYPE</a>* Device::usr_buf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BUFTYPE指针 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_device.html">Device</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
